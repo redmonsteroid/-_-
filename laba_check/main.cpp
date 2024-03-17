@@ -26,7 +26,7 @@ int main(){
             double f;
             f = p * 0.5;
             cout << "Area Geron = " << sqrt(f * (f - x) * (f - y) * (f - z)) << endl;
-            if ((x == y) and (x == z) and (y == z)) {
+            if ((x == y) or (x == z) or (y == z)) {
                 cout << "Isosceles triangle " << endl;
             }
             else {
