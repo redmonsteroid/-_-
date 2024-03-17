@@ -18,20 +18,21 @@ int main(){
             cout << "Diagonal = " << sqrt( pow( a , 2 ) + pow( b , 2 ) ) << endl;
             break; 
         case 2:
-        cout << "Enter the sides of triangle" << endl;
-        int x, y, z, p;
-        cin >> x >> y >> z;
-        p = x + y + z;
-        cout << "Perimeter triangl = " << p << endl;
-        double f = p * 0.5;
-        cout << "Area Geron = " << sqrt(f * (f - x) * (f - y) * (f - z)) << endl;
-        if ((x == y)  (x == z)  (y == z) || (x == y == z)) {
-            cout << "Isosceles triangle " << endl;
-        }
-        else {
-            cout << "A non-isosceles triangle " << endl;
-        }
-        break;
+            cout << "Enter the sides of triangle" << endl;
+            int x, y, z, p;
+            cin >> x >> y >> z;
+            p = x + y + z;
+            cout << "Perimeter triangl = " << p << endl;
+            double f;
+            f = p * 0.5;
+            cout << "Area Geron = " << sqrt(f * (f - x) * (f - y) * (f - z)) << endl;
+            if ((x == y) and (x == z) and (y == z)) {
+                cout << "Isosceles triangle " << endl;
+            }
+            else {
+                cout << "A non-isosceles triangle " << endl;
+            }
+            break;
         default:
             cout << "Incorrect figure number entered" << endl;
             return -1;
