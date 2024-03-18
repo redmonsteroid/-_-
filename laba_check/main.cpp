@@ -21,6 +21,6 @@ int main(){
             cout << "Incorrect figure number entered" << endl;
             return -1;
     }
-    cout << "Hello, world!" << endl;
+    
     return 0;
 }
